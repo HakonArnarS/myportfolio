@@ -1,0 +1,46 @@
+nav.navigation {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    font-family: $font-stack;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem; 
+    background-color: transparent; 
+    color: #D93636;
+    font-size: 1.5rem;
+    height: 11vh; 
+    width: 100%; 
+
+    span {
+      font-size: 1.75rem; 
+    }
+
+    ul {
+      display: none; 
+      width: 30vw; 
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        cursor: pointer; 
+        color: white; 
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        margin-left: 1.5rem;  
+      }
+    }
+}
+@media (min-width: $bp-lrg) {
+    p.block-img {
+      display: none;
+    }
+    nav.navigation ul {
+      display: flex; 
+    }
+}

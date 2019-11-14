@@ -1,0 +1,27 @@
+section.about {
+    background-color: lightyellow;
+    color: #000; 
+    li {
+        font-family: $font-stack;
+        font-size: 1.5rem; 
+        list-style: inside;
+    }
+
+}
+div.infoandimg {
+    display: flex; 
+    margin-bottom: 1.5rem;
+    
+    img.avatar { 
+        width: 8rem; 
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+}
+
+span {
+    font-family: $font-headings; 
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
