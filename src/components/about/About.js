@@ -8,7 +8,7 @@ const About = () => {
 
     useEffect(() => {
         // Connect to Prismic
-        Prismic.api('http://hakon-portfolio.prismic.io/api/v2').then(api => {
+        Prismic.api('https://hakon-portfolio.prismic.io/api/v2').then(api => {
             const aboutPred = Prismic.Predicates.at('document.type', 'about');
             api.query(aboutPred).then(response => {
                 setAbout(response.results[0]);

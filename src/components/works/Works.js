@@ -9,7 +9,7 @@ const Works = () => {
 
     useEffect(() => {
         // Connect to Prismic
-        Prismic.api('http://hakon-portfolio.prismic.io/api/v2').then(api => {
+        Prismic.api('https://hakon-portfolio.prismic.io/api/v2').then(api => {
             const worksPred = Prismic.Predicates.at('document.type', 'works');
             api.query(worksPred).then(response => {
                 setWorks(response.results[0]);

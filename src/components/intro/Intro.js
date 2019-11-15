@@ -8,7 +8,7 @@ const Intro = () => {
 
     useEffect(() => {
         // Connect to Prismic
-        Prismic.api('http://hakon-portfolio.prismic.io/api/v2').then(api => {
+        Prismic.api('https://hakon-portfolio.prismic.io/api/v2').then(api => {
             const introPred = Prismic.Predicates.at('document.type', 'intro');
             api.query(introPred).then(response => {
                 setIntro(response.results[0]);

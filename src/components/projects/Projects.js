@@ -7,7 +7,7 @@ const Projects = () => {
 
     useEffect(() => {
         // Connect to Prismic
-        Prismic.api('http://hakon-portfolio.prismic.io/api/v2').then(api => {
+        Prismic.api('https://hakon-portfolio.prismic.io/api/v2').then(api => {
             const projectsPred = Prismic.Predicates.at('document.type', 'projects');
             api.query(projectsPred).then(response => {
                 setProjects([...response.results]);

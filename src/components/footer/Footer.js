@@ -8,7 +8,7 @@ const Footer = () => {
 
     useEffect(() => {
         // Connect to Prismic
-        Prismic.api('http://hakon-portfolio.prismic.io/api/v2').then(api => {
+        Prismic.api('https://hakon-portfolio.prismic.io/api/v2').then(api => {
             const footerPred = Prismic.Predicates.at('document.type', 'footer');
             api.query(footerPred).then(response => {
                 setFooter(response.results[0]);
